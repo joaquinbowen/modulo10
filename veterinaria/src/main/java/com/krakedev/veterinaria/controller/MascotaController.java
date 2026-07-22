@@ -21,11 +21,11 @@ public class MascotaController {
     private List<Mascota> mascotas = new ArrayList<>();
 
     private MascotaController() {
-        mascotas.add(new Mascota(1, "Manchas", "Gato", 12, "juan"));
-        mascotas.add(new Mascota(2, "Boby", "Perro", 2, "juan"));
-        mascotas.add(new Mascota(3, "Pelusa", "Gato", 8, "juan"));
-        mascotas.add(new Mascota(4, "Toby", "Perro", 4, "juan"));
-        mascotas.add(new Mascota(5, "Canela", "Perro", 10, "juan"));
+        mascotas.add(new Mascota(1, "Manchas", "Gato", 12, "juan", java.time.LocalDate.now()));
+        mascotas.add(new Mascota(2, "Boby", "Perro", 2, "juan", java.time.LocalDate.now()));
+        mascotas.add(new Mascota(3, "Pelusa", "Gato", 8, "juan", java.time.LocalDate.now()));
+        mascotas.add(new Mascota(4, "Toby", "Perro", 4, "juan", java.time.LocalDate.now()));
+        mascotas.add(new Mascota(5, "Canela", "Perro", 10, "juan", java.time.LocalDate.now()));
 
     }
 
