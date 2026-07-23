@@ -16,7 +16,7 @@ import lombok.SneakyThrows;
 @RequiredArgsConstructor
 public class MascotaServiceImpl implements MascotaService {
 
-    private MascotaRepository mascotaRepository;
+    private final MascotaRepository mascotaRepository;
 
     @Override
     public Mascota registrarMascota(Mascota mascota) {
@@ -37,13 +37,13 @@ public class MascotaServiceImpl implements MascotaService {
 
     @Override
     public Optional<Mascota> buscarPorId(Long id) {
-        return mascotaRepository.findByIdMascota(id);
+        return mascotaRepository.findById(id);
     }
 
     @Override
     @SneakyThrows
     public Mascota actualizarMascota(Long id, Mascota mascota) {
-        Mascota mascotaExistente = mascotaRepository.findByIdMascota(id)
+        Mascota mascotaExistente = mascotaRepository.findById(id)
                 .orElseThrow(() -> new Exception("Mascota con ID " + id + " no encontrada"));
 
         mascotaExistente.setNombre(mascota.getNombre());
@@ -59,7 +59,7 @@ public class MascotaServiceImpl implements MascotaService {
     @Override
     @SneakyThrows
     public void eliminarMascota(Long id) {
-        mascotaRepository.findByIdMascota(id)
+        mascotaRepository.findById(id)
                 .orElseThrow(() -> new Exception("Mascota con ID " + id + " no encontrada"));
 
         mascotaRepository.deleteById(id);

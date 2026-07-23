@@ -1,0 +1,73 @@
+{
+  "info": {
+    "name": "Veterinaria API - Datos de Prueba",
+    "description": "Colección de datos para pruebas en Insomnia"
+  },
+  "endpoints": [
+    {
+      "name": "Registrar Mascota 1",
+      "method": "POST",
+      "url": "http://localhost:8080/api/mascotas/registrar",
+      "body": {
+        "nombre": "Manchas",
+        "especie": "Gato",
+        "edad": 12,
+        "nombreDueno": "Juan",
+        "fechaRegistro": "2024-07-22"
+      }
+    },
+    {
+      "name": "Registrar Mascota 2",
+      "method": "POST",
+      "url": "http://localhost:8080/api/mascotas/registrar",
+      "body": {
+        "nombre": "Boby",
+        "especie": "Perro",
+        "edad": 2,
+        "nombreDueno": "María",
+        "fechaRegistro": "2024-07-22"
+      }
+    },
+    {
+      "name": "Registrar Mascota 3",
+      "method": "POST",
+      "url": "http://localhost:8080/api/mascotas/registrar",
+      "body": {
+        "nombre": "Pelusa",
+        "especie": "Gato",
+        "edad": 8,
+        "nombreDueno": "Carlos",
+        "fechaRegistro": "2024-07-22"
+      }
+    },
+    {
+      "name": "Registrar Mascota 4",
+      "method": "POST",
+      "url": "http://localhost:8080/api/mascotas/registrar",
+      "body": {
+        "nombre": "Toby",
+        "especie": "Perro",
+        "edad": 4,
+        "nombreDueno": "Ana",
+        "fechaRegistro": "2024-07-22"
+      }
+    },
+    {
+      "name": "Registrar Mascota 5",
+      "method": "POST",
+      "url": "http://localhost:8080/api/mascotas/registrar",
+      "body": {
+        "nombre": "Canela",
+        "especie": "Perro",
+        "edad": 10,
+        "nombreDueno": "Pedro",
+        "fechaRegistro": "2024-07-22"
+      }
+    },
+    {
+      "name": "Listar todas las mascotas",
+      "method": "GET",
+      "url": "http://localhost:8080/api/mascotas"
+    }
+  ]
+}
